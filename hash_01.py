@@ -16,3 +16,4 @@ def solution(participant, completion):
     answer = dic[temp]
     
     return answer
+
