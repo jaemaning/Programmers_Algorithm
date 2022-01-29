@@ -17,3 +17,6 @@ def solution(participant, completion):
     
     return answer
 
+
+
+## 공백용 ##
