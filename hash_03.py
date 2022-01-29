@@ -1,6 +1,7 @@
 # [문제 출처] - https://programmers.co.kr/learn/courses/30/lessons/42578
 # 위장 (hash table algorithm)
 
+
 def solution(clothes):
     dic = {}
     count = 0
@@ -18,3 +19,6 @@ def solution(clothes):
 
     answer = ans-1
     return answer
+
+
+## 공백용 ##
