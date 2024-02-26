@@ -1,0 +1,8 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/276034
+
+-- 코드를 작성해주세요
+SELECT ID, EMAIL, FIRST_NAME, LAST_NAME FROM DEVELOPERS d
+WHERE EXISTS(
+        SELECT 1 FROM SKILLCODES s
+        WHERE s.NAME in ("Python", "C#") AND s.CODE & d.SKILL_CODE)
+ORDER BY ID;
