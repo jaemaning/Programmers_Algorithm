@@ -1,0 +1,10 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/144856
+
+-- 코드를 입력하세요
+SELECT b.AUTHOR_ID, a.AUTHOR_NAME, b.CATEGORY, SUM(bs.sales*b.price) TOTAL_SALES 
+FROM BOOK b
+LEFT JOIN BOOK_SALES bs ON b.BOOK_ID = bs.BOOK_ID
+LEFT JOIN AUTHOR a ON b.AUTHOR_ID = a.AUTHOR_ID
+WHERE MONTH(sales_date) = '01' AND YEAR(sales_date) = '2022'
+GROUP BY b.AUTHOR_ID, b.CATEGORY
+ORDER BY b.AUTHOR_ID, b.CATEGORY DESC;
