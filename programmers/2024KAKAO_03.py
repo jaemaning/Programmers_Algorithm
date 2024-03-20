@@ -1,3 +1,5 @@
+# [문제 출처] - https://school.programmers.co.kr/learn/courses/30/lessons/258709
+# 2024 KAKAO WINTER INTERNSHIP 3번 주사위 고르기
 
 
 from collections import deque

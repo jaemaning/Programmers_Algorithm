@@ -1,3 +1,6 @@
+# [문제 출처] - https://school.programmers.co.kr/learn/courses/30/lessons/258707
+# 2024 KAKAO WINTER INTERNSHIP 4번 n + 1 카드게임
+
 
 def solution(coin, cards):
     answer = 0
