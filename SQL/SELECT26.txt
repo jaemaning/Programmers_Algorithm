@@ -1,0 +1,11 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/299305
+# -- 코드를 작성해주세요
+
+WITH T AS (
+    SELECT PARENT_ID, COUNT(*) C FROM ECOLI_DATA
+    WHERE PARENT_ID IS NOT NULL
+    GROUP BY PARENT_ID
+)
+
+SELECT ID, IFNULL(C, 0) CHILD_COUNT FROM ECOLI_DATA E
+LEFT JOIN T ON E.ID = T.PARENT_ID
